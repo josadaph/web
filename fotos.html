@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,61 @@
     <!--se usa para poner el logo en la pagina-->
     <link rel="stylesheet" href="css/miestilos.css">
 </head>
+
 <body>
     <div class="titulo">
         <header>
-            inicio 
+            inicio
         </header>
     </div>
     <main>
         <div id="navegacion">
 
             <nav>
+                |
                 <a href="index.html"> inicio </a>|
                 <a href="videos.html"> videos </a> |
                 <a href="fotos.html"> Fotos</a> |
                 <a href="contactos.html"> Contactos </a>|
             </nav>
         </div>
+
+        <div>
+            <h3 id="imagen-original">Imagen Original</h3>
+
+            <img src="imagenes/locosfavicon.jpg" id="imagen-rata">
+
+        </div>
+        <div id="atributos">
+            <p>
+                <br>
+                width- este atributo declara el ancho de la imagen.
+                <br>
+                height- este atributo declara la altura de la imagen.
+                <br>
+                alt- este atributo especifica el texto que se muestra cuando la imagen no se puede cargar.
+            </p>
+        </div>
+        <div>
+            <h3 id="imagen-modificada">Imagen modificada</h3>
+            <figure>
+                <img src="imagenes/locosfavicon.jpg" width="150">
+            <figcaption> de una rata esquizofrenica</figcaption>
+        </figure>
+        </div>
+
+
+
     </main>
-    
+    <footer>
+        <!--el footer es un bloque que nunca cambia algo que es fijo igual que el nav bar (lo de inicio, contactos y asi) y es como un pie de pagina-->
+        <!--address es para dar una direccion-->
+        <!--el small hace que el texto sea mucho mas pequeño-->
+        <!--el &copy; es para hacer el simbolito derechos de autor-->
+        <address>Alajuela, Costa Rica</address>
+        <small>&copy;Derechos, Reservados 2024</small>
+    </footer>
+
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,120 @@
     <link rel="icon" href="imagenes/favicon.png" type="image/png" sizes="16x16">
     <!--se usa para poner el logo en la pagina-->
     <link rel="stylesheet" href="css/miestilos.css">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+    
 </head>
+
 <body>
     <div class="titulo">
         <header>
-            inicio 
+            inicio
         </header>
     </div>
     <main>
         <div id="navegacion">
 
             <nav>
+                |
                 <a href="index.html"> inicio </a>|
                 <a href="videos.html"> videos </a> |
                 <a href="fotos.html"> Fotos</a> |
                 <a href="contactos.html"> Contactos </a>|
             </nav>
         </div>
+        <div>
+            <ul id="lista-sthepen"><!--ul es una etiqueta de apertura y de cierre agrupada-->
+                <!--li es lo que va dentro de la lista o sea los objetos de la lista-->
+                
+                 <li>IT, stephen king</li>
+                 <li>Carrie, Sthepen King</li>
+                 <li>El Resplandor, Sthepen King</li>
+                 <li>Misery, Sthepen King</li>
+
+               
+            </ul>
+        </div>
+        <div>
+            <!--
+            El atributo start para determinar el valor desde el cual los indicadores tienen que comenzar a contar.
+            El atributo type para determinar el tipo de indicador que queremos usar. 
+            Los valores disponibles para el atributo type son: 
+            1 (números), 
+            a (letras minúsculas), 
+            A (letras mayúsculas), 
+            i (números romanos en minúsculas),
+            I (números romanos en mayúsculas). -->
+            <ol type="1" start="1" id="lista-ordenada"><!--ol es una etiqueta de apertura y de cierre agrupada ordenadamente, 
+                donde el type define que tipo de orden va tener-->
+                <!--li es lo que va dentro de la lista o sea los objetos de la lista-->
+                
+                 <li>IT, stephen king</li>
+                 <li>Carrie, Sthepen King</li>
+                 <li>El Resplandor, Sthepen King</li>
+                 <li>Misery, Sthepen King</li>
+
+               
+            </ol>
+        </div>
+        <div id="lista-desplegable" >
+            <details>
+                <summary>My Books</summary>
+                <p>IT</p>
+                <p>Carrie</p>
+                <p>El Resplandor</p>
+                <p>Miresy</p>
+            </details>
+        </div>
+        <br>
+        <br>
+        <div >
+            <table style="width:50%" >
+                <tr class="tablas">
+                  <th>pelicula</th>
+                  <th>genero</th>
+                  <th>año de estreno</th>
+                </tr>
+                <tr class="tablas">
+                  <td>titanic</td>
+                  <td>(1997)</td>
+                  <td>Drama/Romance</td>
+                </tr>
+                <tr class="tablas">
+                  <td>El Padrino</td>
+                  <td>(1972)</td>
+                  <td>Crimen/Drama</td>
+                </tr>
+                <tr class="tablas">
+                    <td>Jurassic Park</td>
+                    <td>(1993)</td>
+                    <td>Ciencia ficción/Aventura</td>
+                  </tr>
+                  <tr class="tablas">
+                    <td>El Señor de los Anillos</td>
+                    <td>(2001)</td>
+                    <td>Fantasía/Aventura</td>
+                  </tr>
+                  <tr class="tablas">
+                    <td>Pulp Fiction</td>
+                    <td>(1994)</td>
+                    <td>Crimen/Drama </td>
+                  </tr>
+
+              </table>
+              
+        </div>
+
+
     </main>
-    
+    <footer>
+        <!--el footer es un bloque que nunca cambia algo que es fijo igual que el nav bar (lo de inicio, contactos y asi) y es como un pie de pagina-->
+        <!--address es para dar una direccion-->
+        <!--el small hace que el texto sea mucho mas pequeño-->
+        <!--el &copy; es para hacer el simbolito derechos de autor-->
+        <address>Alajuela, Costa Rica</address>
+        <small>&copy;Derechos, Reservados 2024</small>
+    </footer>
+
 </body>
+
 </html>
