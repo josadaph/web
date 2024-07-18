@@ -143,3 +143,26 @@ table, th, td {
 
 
   }
+
+  #contacto{
+  margin-left: 1025px;
+  border:3px solid hsl(274, 64%, 30%);
+  width: 300px;
+  padding-left:10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: 5px;
+  border-radius: 10px;
+
+  }
+   
+#añosdeexperiencia{
+    text-align: center;
+
+}
+ 
+#informacionpersonal{
+    text-align: center;
+
+}
+

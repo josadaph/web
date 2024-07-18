@@ -27,6 +27,88 @@
                 <a href="contactos.html"> Contactos </a>|
             </nav>
         </div>
+        <br><br><br><br><br>
+        <h3 id="informacionpersonal">INFORMACION PERSONAL</h3>
+        <br><br><br><br><br>
+        <div>
+            <form id="contacto" name="formulario" method="get" action="procesar.html">
+                <p>
+                    <label for="nombre"> nombre:
+                        <!--el imput es un etqueta de entrada el cual crea un campo para rellenar o bien un campo de entrada-->
+                        <!--maxlength este define el limite de caracteres a escribir-->
+                        <input type="text" name="nombre" maxlength="20" id="nombre">
+                    </label>
+                </p>
+                <p>
+                    <label for="clave">clave:
+                        <input type="password" name="clave" maxlenth="50" id="clave">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        edad: <input type="number" min="13" max="100" name="edad" id="edad">
+                    </label>
+                </p>
+                <!--"range" este valor genera un campo de entrada para insertar un rango de numeros-->
+                <p>
+                    <label>
+                        estatura: <input type="range" min="50" max="300" name="estatura" value="250" id="estatura">
+                    </label>
+                </p>
+                <p>
+                    <label>correo: <input type="email" name="correo"></label>
+                </p>
+                <p>
+                    <label> telefono: <input type="tel" name="telefono" placeholder="506-0000-0000">
+                    </label>
+                </p>
+                <!--el URL genera un campo para posicionar un enlase url-->
+                <p>
+                    `<label>sitio web: <input type="url" name="sitioweb">
+                    </label>
+                </p>
+                <div>
+
+                    <h3 id="añosdeexperiencia">
+                        años de experiencia:
+                    </h3>
+                    <br>
+                    <p>
+
+                        <label>experiencia: 
+                            
+                        <br>
+
+                        <input type="radio" name="experiencia" value="1" checked> 1 año
+                        </label>
+                        <br>
+
+                        <input type="radio" name="experiencia" value="2"> 2 año
+                        <br>
+
+                        <input type="radio" name="experiencia" value="2"> 3 año
+                        <br>
+
+                        <input type="radio" name="experiencia" value="2"> 4 año
+                        <br>
+
+                        <input type="radio" name="experiencia" value="2"> 5 año
+                        <br>
+
+                        <input type="radio" name="experiencia" value="2"> mas de 5 año
+                        
+                        <h3>digite cuantos años mas</h3>
+                        <label>
+                           experiencia de <input type="number" min="6" max="30" name="años de experiencia" id="años de experiencia"> años
+                        </label>
+
+
+
+                    </p>
+
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <!--el footer es un bloque que nunca cambia algo que es fijo igual que el nav bar (lo de inicio, contactos y asi) y es como un pie de pagina-->
