@@ -27,9 +27,9 @@
                 <a href="contactos.html"> Contactos </a>|
             </nav>
         </div>
-        <br><br><br><br><br>
+        <br><br>
         <h3 id="informacionpersonal">INFORMACION PERSONAL</h3>
-        <br><br><br><br><br>
+        <br>
         <div>
             <form id="contacto" name="formulario" method="get" action="procesar.html">
                 <p>
@@ -64,7 +64,7 @@
                 </p>
                 <!--el URL genera un campo para posicionar un enlase url-->
                 <p>
-                    `<label>sitio web: <input type="url" name="sitioweb">
+                    <label>sitio web: <input type="url" name="sitioweb">
                     </label>
                 </p>
                 <div>
@@ -72,38 +72,78 @@
                     <h3 id="añosdeexperiencia">
                         años de experiencia:
                     </h3>
-                    <br>
+                    
                     <p>
 
-                        <label>experiencia: 
-                            
-                        <br>
+                        <label>experiencia:
 
-                        <input type="radio" name="experiencia" value="1" checked> 1 año
+                            <br>
+
+                            <input type="radio" name="experiencia" value="1" checked> 1 año
                         </label>
-                        <br>
+                        
 
                         <input type="radio" name="experiencia" value="2"> 2 año
                         <br>
 
-                        <input type="radio" name="experiencia" value="2"> 3 año
-                        <br>
-
-                        <input type="radio" name="experiencia" value="2"> 4 año
-                        <br>
-
-                        <input type="radio" name="experiencia" value="2"> 5 año
-                        <br>
-
-                        <input type="radio" name="experiencia" value="2"> mas de 5 año
+                        <input type="radio" name="experiencia" value="3"> 3 año
                         
-                        <h3>digite cuantos años mas</h3>
-                        <label>
-                           experiencia de <input type="number" min="6" max="30" name="años de experiencia" id="años de experiencia"> años
+
+                        <input type="radio" name="experiencia" value="4"> 4 año
+                        <br>
+
+                        <input type="radio" name="experiencia" value="5"> 5 año
+                        
+
+                        <input type="radio" name="experiencia" value="mas de 5 años"> mas de 5 año
+
+                    <h3>digite cuantos años mas</h3>
+                    <label>
+                        cuento con la experiencia de <input type="number" min="6" max="30" name="años de experiencia"
+                            id="años de experiencia"> años
+                    </label>
+
+                    </p>
+
+                </div>
+                <div>
+                    <h3>Fecha de Nacimiento</h3>
+                    <input id="calendario" type="date" name="Fecha">
+                </div>
+
+                <div>
+                    <h3>color</h3>
+                    <input type="color" name="mi color" value="#998800">
+                </div>
+                <div>
+                    <!--<textarea> este elemento crea un campo de entrada
+                        para insertar multiples lineas de texto.
+                        el tamaño se puede declarar en mueros enteros usando los atributos rows y cols-->
+
+                    <p>
+                        <label>texto:
+                            <br>
+                            <textarea name="texto" cols="30" rows="6"></textarea>
+
                         </label>
-
-
-
+                    </p>
+                <div> 
+                    <!--<select> este elemento crea una lista de opciones 
+                        que el usurario puede elegir.
+                        trabaja  junto con el elemento <option> para definir cada opcion-->
+                    <label for="listado">Libros: </label> 
+                    <select name="libro" id="listado"> 
+                    <option value="1">IT</option> 
+                    <option value="2">Carrie</option> 
+                    <option value="3">El Resplandor</option> 
+                    <option value="4">Misery</option> 
+                    </select> 
+                </div>
+                <div>
+                    <p>
+                        <!-- submit este valor genenera un boton para enviar el formulario-->
+                    
+                    <input type="submit" value="enviar">
                     </p>
 
                 </div>
@@ -121,4 +161,19 @@
 
 </body>
 
+
 </html>
+<script>
+    var fechaactua = new Date();
+    var dia = fechaactua.getDate();
+    var mes = fechaactua.getMonth() + 1;
+    var año = fechaactua.getFullYear();
+    if (mes < 10) {
+        mes = "0" + mes
+    }
+    if (dia < 10) {
+        dia = "0" + dia
+    }
+    var fechaformateada = año + "-" + mes + "-" + dia;
+    document.getElementById('calendario').value = fechaformateada;
+</script>
